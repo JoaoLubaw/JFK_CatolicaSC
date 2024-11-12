@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login JFK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">JFK</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#conteudoNavbarSuportado"
+          aria-controls="conteudoNavbarSuportado"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Pacotes
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Praia</a>
+                <a class="dropdown-item" href="#">Serra</a>
+                <a class="dropdown-item" href="#">Cidade</a>
+                <a class="dropdown-item" href="#">Campo</a>
+                <a class="dropdown-item" href="#">Internacional</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Minha conta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="process__container container">
+      <h6>Processo de compra</h6>
+      <div class="line"></div>
+      <div class="dots">
+        <div class="dot dot--current"></div>
+        <div class="dot dot--current"></div>
+        <div class="dot"></div>
+      </div>
+    </section>
+
+    <section class="container mt-5 form__container" id="paymentForm">
+      <h1 class="mb-4">Informações de Cartão</h1>
+      <form onsubmit="return validateForm();">
+        <!-- Nome no Cartão -->
+        <div class="form-group">
+          <label for="cardNameInput">Nome no Cartão:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cardNameInput"
+            placeholder="Nome completo conforme no cartão"
+            required
+          />
+        </div>
+
+        <!-- Número do Cartão -->
+        <div class="form-group">
+          <label for="cardNumberInput">Número do Cartão:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cardNumberInput"
+            placeholder="1234 5678 9012 3456"
+            maxlength="19"
+            required
+          />
+        </div>
+
+        <!-- Data de Validade -->
+        <div class="form-group">
+          <label for="expiryDateInput">Data de Validade:</label>
+          <input
+            type="month"
+            class="form-control"
+            id="expiryDateInput"
+            required
+          />
+        </div>
+
+        <!-- Código de Segurança (CVV) -->
+        <div class="form-group">
+          <label for="cvvInput">Código de Segurança (CVV):</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cvvInput"
+            placeholder="CVV"
+            maxlength="4"
+            required
+          />
+        </div>
+
+        <!-- Tipo de Cartão -->
+        <div class="form-group">
+          <label for="cardTypeInput">Tipo de Cartão:</label>
+          <select class="form-control" id="cardTypeInput">
+            <option value="credit">Crédito</option>
+            <option value="debit">Débito</option>
+          </select>
+        </div>
+
+        <!-- Botões -->
+        <button type="reset" class="btn btn-danger">Limpar</button>
+        <button type="submit" class="btn btn-success">
+          Confirmar Pagamento
+        </button>
+      </form>
+    </section>
+
+    <script>
+      function validateForm() {
+        const cardName = document.getElementById("cardNameInput").value.trim();
+        const cardNumber = document
+          .getElementById("cardNumberInput")
+          .value.replace(/\s+/g, "");
+        const expiryDate = document.getElementById("expiryDateInput").value;
+        const cvv = document.getElementById("cvvInput").value;
+
+        // Verificação do nome no cartão
+        if (!cardName) {
+          alert("Por favor, insira o nome completo do titular do cartão.");
+          return false;
+        }
+
+        // Verificação do número do cartão
+        const cardNumberPattern = /^\d{4}\d{4}\d{4}\d{4}$/;
+        if (!cardNumberPattern.test(cardNumber)) {
+          alert("Por favor, insira um número de cartão válido (16 dígitos).");
+          return false;
+        }
+
+        // Verificação do CVV
+        const cvvPattern = /^\d{3,4}$/;
+        if (!cvvPattern.test(cvv)) {
+          alert("Por favor, insira um CVV válido de 3 ou 4 dígitos.");
+          return false;
+        }
+
+        // Verificação da data de validade
+        if (!expiryDate) {
+          alert("Por favor, insira uma data de validade válida.");
+          return false;
+        }
+
+        window.location.href = "conclude.html";
+        return false;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+{
+  "pacotes": [
+    {
+      "id": 1,
+      "nome": "Fernando de Noronha",
+      "preco": "4400,00",
+      "noites": 5,
+      "adultos": 2,
+      "inclui": "Viagem + Estadia",
+      "alimentacao": "Café da manhã no hotel",
+      "desc": "A ilha principal desse arquipélago pernambucano a cerca de 530 km de Recife é um dos destinos de praia mais desejados do Brasil. Águas límpidas de um verde-esmeralda único, areias finas e claras, vegetação exuberante e o imponente Morro do Pico, com seus 321 metros, compõem um cenário para lá de paradisíaco. Para além dos cerca de 3 mil habitantes, Noronha é povoado por tartarugas, tubarões, golfinhos e outras espécies que podem ser observadas em passeios de barco, mergulhos e trilhas com diferentes níveis de dificuldade. Pousadas charmosas e restaurantes principalmente de peixes e frutos do mar dão conforto e sabor à viagem.",
+      "imagens": [
+        "https://media.staticontent.com/media/pictures/470c512a-47e8-49b5-aaed-1c56997e60a6",
+        "https://cdn.blablacar.com/wp-content/uploads/br/2024/05/05094658/fernando-de-noronha-3.webp",
+        "https://www.viajenaviagem.com/wp-content/uploads/2022/09/noronha-swell.jpg.webp"
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Copacabana",
+      "preco": "3400,00",
+      "noites": 4,
+      "adultos": 2,
+      "inclui": "Viagem + Estadia",
+      "alimentacao": "Café da manhã no hotel",
+      "desc": "Copacabana é um dos bairros mais icônicos e mundialmente conhecidos do Rio de Janeiro, localizado na zona sul da cidade. Famosa pela sua extensa praia em formato de meia-lua, a Praia de Copacabana se estende por cerca de 4 km e é um dos principais cartões-postais do Brasil. Sua orla é margeada por um calçadão de pedras portuguesas, com o desenho em ondas, projetado pelo paisagista Burle Marx, sendo um local muito frequentado para caminhadas, corridas, e passeios de bicicleta.",
+      "imagens": [
+        "https://images.adsttc.com/media/images/6449/8011/2f92/3201/7c9e/4beb/newsletter/a-historia-do-calcadao-de-copacabana-da-origem-portuguesa-ao-burle-marx_6.jpg?1682538521",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c2/Forte_de_Copacabana_panorama.jpg",
+        "https://homehub.com.br/blog/wp-content/uploads/2022/12/pexels-frans-van-heerden-720300-1.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Barra Velha",
+      "preco": "12390,00",
+      "noites": 3,
+      "adultos": 2,
+      "inclui": "Voo + Estadia 5 estrelas",
+      "alimentacao": "Café da manhã e jantar no hotel",
+      "desc": "Conhecida como a grande metrópole praiana brasileira, Barra Velha (Old Bar) tem sido mundialmente citada por suas praias e seu magestoso público e eventos de final de ano com bandas aclamadas por todo o globo.",
+      "imagens": [
+        "https://www.viagensecaminhos.com/wp-content/uploads/2011/12/barra-velha-vista-aerea.jpg",
+        "https://www.viagensecaminhos.com/wp-content/uploads/2011/12/iemanja-barra-velha.jpg",
+        "https://media.staticontent.com/media/pictures/08223d5a-e691-4b1b-9e90-5d3008b09335"
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Fernando de Noronha - em Familia",
+      "preco": "2000,00/Por pessoa",
+      "noites": 5,
+      "adultos": "No mínimo 3",
+      "inclui": "Viagem + Estadia",
+      "alimentacao": "Café da manhã no hotel",
+      "desc": "A ilha principal desse arquipélago pernambucano a cerca de 530 km de Recife é um dos destinos de praia mais desejados do Brasil. Águas límpidas de um verde-esmeralda único, areias finas e claras, vegetação exuberante e o imponente Morro do Pico, com seus 321 metros, compõem um cenário para lá de paradisíaco. Para além dos cerca de 3 mil habitantes, Noronha é povoado por tartarugas, tubarões, golfinhos e outras espécies que podem ser observadas em passeios de barco, mergulhos e trilhas com diferentes níveis de dificuldade. Pousadas charmosas e restaurantes principalmente de peixes e frutos do mar dão conforto e sabor à viagem.",
+      "imagens": [
+        "https://media.staticontent.com/media/pictures/470c512a-47e8-49b5-aaed-1c56997e60a6",
+        "https://cdn.blablacar.com/wp-content/uploads/br/2024/05/05094658/fernando-de-noronha-3.webp",
+        "https://www.viajenaviagem.com/wp-content/uploads/2022/09/noronha-swell.jpg.webp"
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Copacabana - em Familia",
+      "preco": "1100,00/Por pessoa",
+      "noites": 4,
+      "adultos": "No mínimo 3",
+      "inclui": "Viagem + Estadia",
+      "alimentacao": "Café da manhã no hotel",
+      "desc": "Copacabana é um dos bairros mais icônicos e mundialmente conhecidos do Rio de Janeiro, localizado na zona sul da cidade. Famosa pela sua extensa praia em formato de meia-lua, a Praia de Copacabana se estende por cerca de 4 km e é um dos principais cartões-postais do Brasil. Sua orla é margeada por um calçadão de pedras portuguesas, com o desenho em ondas, projetado pelo paisagista Burle Marx, sendo um local muito frequentado para caminhadas, corridas, e passeios de bicicleta.",
+      "imagens": [
+        "https://images.adsttc.com/media/images/6449/8011/2f92/3201/7c9e/4beb/newsletter/a-historia-do-calcadao-de-copacabana-da-origem-portuguesa-ao-burle-marx_6.jpg?1682538521",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c2/Forte_de_Copacabana_panorama.jpg",
+        "https://homehub.com.br/blog/wp-content/uploads/2022/12/pexels-frans-van-heerden-720300-1.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Barra Velha - em Familia",
+      "preco": "4300,00/Por pessoa",
+      "noites": 3,
+      "adultos": "No mínimo 3",
+      "inclui": "Voo + Estadia 5 estrelas",
+      "alimentacao": "Café da manhã e jantar no hotel",
+      "desc": "Conhecida como a grande metrópole praiana brasileira, Barra Velha (Old Bar) tem sido mundialmente citada por suas praias e seu magestoso público e eventos de final de ano com bandas aclamadas por todo o globo.",
+      "imagens": [
+        "https://www.viagensecaminhos.com/wp-content/uploads/2011/12/barra-velha-vista-aerea.jpg",
+        "https://www.viagensecaminhos.com/wp-content/uploads/2011/12/iemanja-barra-velha.jpg",
+        "https://media.staticontent.com/media/pictures/08223d5a-e691-4b1b-9e90-5d3008b09335"
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Praia do Rosa",
+      "preco": "6300,00",
+      "noites": 5,
+      "adultos": "2",
+      "inclui": "Voo + Estadia",
+      "alimentacao": "Café da manhã no hotel",
+      "desc": "A Praia do Rosa é única. Um Pedaço do paraíso entre a Serra do Mar e o Oceano Atlântico, o Rosa é um lugar rústico, de natureza vívida e dono de um estilo verdadeiramente singular.",
+      "imagens": [
+        "https://cdn.bitrix24.com.br/b17966311/landing/3b8/3b83848e24edb88e260f63c45b79bfec/home_geraldorosa_jrpetry79_1920x1080_1x.jpg",
+        "https://cdn.bitrix24.com.br/b17966311/landing/35d/35d777ee823616ba08d725c27f88ef15/Praia-da-Ferrugem-03-1205x800_2x.jpg",
+        "https://static.wixstatic.com/media/29a16b_92b01f1ec93a4ea593c9f4b5b9267ba0~mv2.jpg/v1/fill/w_980,h_551,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/29a16b_92b01f1ec93a4ea593c9f4b5b9267ba0~mv2.jpg"
+      ]
+    }
+  ]
+}
